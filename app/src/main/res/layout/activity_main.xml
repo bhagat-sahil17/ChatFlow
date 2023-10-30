@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#FEFEFE"
+    >
+
+    <TextView
+        android:id="@+id/wlcm"
+        android:layout_gravity="center"
+        android:text="@string/welcome"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#2D9527"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        />
+
+    <ImageView
+        android:id="@+id/kala"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/startingimage"
+        android:src="@drawable/ss" />
+    <TextView
+        android:text="@string/chatflow"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#24801E"
+        android:id="@+id/apname"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:layout_marginTop="2sp"
+        android:text="@string/let_your_chats_glide_freely"
+        android:textColor="#2F9029"
+        />
+
+    <Button
+        android:background="@drawable/box"
+        android:padding="5dp"
+        android:id="@+id/h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="#2F9129"
+        android:text="@string/get_stared"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+</LinearLayout>

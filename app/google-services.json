@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364619753640",
+    "project_id": "chatapp-16f79",
+    "storage_bucket": "chatapp-16f79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364619753640:android:68d122611e74ce829e7a9d",
+        "android_client_info": {
+          "package_name": "com.example.chatflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzBiMKmfNvAyKt8B2C_DeZuxMJtAEyrvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

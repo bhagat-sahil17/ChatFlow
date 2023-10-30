@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ChatFlow</string>
+    <string name="welcome">WELCOME!</string>
+    <string name="startingimage">startingimage</string>
+    <string name="chatflow">ChatFlow</string>
+    <string name="get_stared">Get Started</string>
+    <string name="let_your_chats_glide_freely">Let Your Chats Glide Freely</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="we_will_send_you_an">We will send you an</string>
+    <string name="one_time_password">One Time Password</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="on_this_number">on this number</string>
+</resources>
