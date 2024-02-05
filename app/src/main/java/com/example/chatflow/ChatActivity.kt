@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.AbsListView
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -59,6 +60,16 @@ class ChatActivity : AppCompatActivity() {
 
 
 
+        var userScrolled = false // Flag to track user scroll
+
+        msgRecyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                super.onScrollStateChanged(recyclerView, newState)
+                if (newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL) {
+                    userScrolled = true // User initiated scroll
+                }
+            }
+        })
 
 
         mDbRef.child("chats").child(senderRoom!!).child("message")
@@ -73,8 +84,11 @@ class ChatActivity : AppCompatActivity() {
 
                     }
                     msgAdapter.notifyDataSetChanged()
-                    msgRecyclerView.smoothScrollToPosition(msgAdapter.itemCount - 1);
-
+                    if (!userScrolled) {
+                        msgRecyclerView.post {
+                            msgRecyclerView.smoothScrollToPosition(msgAdapter.itemCount - 1)
+                        }
+                    }
 
                 }
 
