@@ -73,7 +73,7 @@ class ChatActivity : AppCompatActivity() {
 
                     }
                     msgAdapter.notifyDataSetChanged()
-                    msgRecyclerView.smoothScrollToPosition(msgAdapter.getItemCount() - 1);
+                    msgRecyclerView.smoothScrollToPosition(msgAdapter.itemCount - 1);
 
 
                 }
